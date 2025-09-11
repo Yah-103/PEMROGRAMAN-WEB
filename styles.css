@@ -1,0 +1,66 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #6a1e9c;
+    color: white;
+}
+
+header {
+    background-color: #5e17eb;
+    padding: 20px 0;
+}
+
+.navigasi ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.navigasi li {
+    margin: 0 20px;
+}
+
+.navigasi a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.jdl {
+    background: url('bg.jpg');
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.jdl h1 {
+    font-size: 6rem;
+    letter-spacing: 5px;
+    color: #5e17eb;
+}
+
+.jdl p {
+    font-size: 4rem;
+    margin-top: 10px;
+    color: white;
+}
+
+.galleri {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.galleri-item {
+    background-color: #9b4d96;
+    height: 300px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+}
+footer {
+  background-color: #5e17eb;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
