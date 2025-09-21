@@ -10,9 +10,9 @@
 Cukup buka `index.html` di browser, pastikan folder assets tersedia.
 
 ## Dependencies
-- Bootstrap 5 (CDN)
+- Bootstrap 5
 
-## Pertanyaan README
+## Pertanyaan
 1. **Mengapa memilih konfigurasi col tertentu untuk tiap breakpoint?**  
    Karena di mobile (≤576px) butuh 1 kolom agar nyaman dibaca, tablet (≥768px) bisa 2–3 kolom agar efisien, dan desktop (≥992px) bisa 4–6 kolom agar tampilan penuh dan rapi.
 
