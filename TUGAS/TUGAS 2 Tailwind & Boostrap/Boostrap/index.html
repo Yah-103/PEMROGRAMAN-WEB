@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profil Instagram - Bootstrap Grid</title>
+  <link rel="stylesheet" href="custom.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+    /* Foto feed square */
+    .feed-img {
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+    /* Highlight Stories */
+    .highlight-circle {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      padding: 2px;
+      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+      margin: auto;
+    }
+    .highlight-circle img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 2px solid #000; /* inner border hitam */
+      object-fit: cover;
+    }
+    .highlight-label {
+      font-size: 0.8rem;
+      margin-top: 5px;
+    }
+    /* Tombol custom */
+    .btn-primary {
+      background-color: #3b82f6;
+      border: none;
+      font-weight: 600;
+    }
+    .btn-dark {
+      background-color: #262626;
+      border: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Profil -->
+  <div class="container py-4">
+    <div class="row">
+      <!-- Foto Profil -->
+      <div class="col-4 col-md-3 text-center">
+        <img src="assets/img/profile.jpg" class="rounded-circle border border-2" width="150" height="150" alt="Profile">
+      </div>
+
+      <!-- Info Profil -->
+      <div class="col-8 col-md-9">
+        <!-- Username menu -->
+        <div class="d-flex align-items-center mb-2">
+          <h4 class="me-3 mb-0">zackdfilms</h4>
+          <i class="bi bi-three-dots-vertical"></i>
+        </div>
+
+        <!-- Stats -->
+        <div class="d-flex mb-2">
+          <div class="me-4"><strong>2,334</strong> posts</div>
+          <div class="me-4"><strong>8.9M</strong> followers</div>
+          <div><strong>0</strong> following</div>
+        </div>
+
+        <!-- Tombol interaksi -->
+        <div class="d-flex align-items-center mb-3">
+          <button class="btn btn-primary me-2">Follow</button>
+          <button class="btn btn-dark text-white me-2">Message</button>
+          <button class="btn btn-dark rounded-circle">
+            <i class="bi bi-person-plus"></i>
+          </button>
+        </div>
+
+        <!-- Bio -->
+        <p class="mb-0">
+          Zack D. Films <br>
+          A Collection of Things That I Find Interesting <br>
+          <a href="#" class="text-info">youtube.com/@zackdfilms?si=HaIRyUwl-Ld6ycjB</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Highlight Stories -->
+  <div class="container mb-3 text-center">
+    <div class="d-flex justify-content-start flex-wrap ms-3">
+      <div class="me-3">
+        <div class="highlight-circle">
+          <img src="assets/img/highlight1.jpg" alt="1">
+        </div>
+        <div class="highlight-label">Z</div>
+      </div>
+      <div class="me-3">
+        <div class="highlight-circle">
+          <img src="assets/img/highlight2.jpg" alt="2">
+        </div>
+        <div class="highlight-label">A</div>
+      </div>
+      <div class="me-3">
+        <div class="highlight-circle">
+          <img src="assets/img/highlight3.jpg" alt="3">
+        </div>
+        <div class="highlight-label">C</div>
+      </div>
+      <div class="me-3">
+        <div class="highlight-circle">
+          <img src="assets/img/highlight4.jpg" alt="4">
+        </div>
+        <div class="highlight-label">K</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigasi Feed -->
+  <div class="container mb-3">
+    <div class="d-flex justify-content-center border-top border-secondary pt-2">
+      <button class="btn btn-dark me-3">
+        <i class="bi bi-grid-3x3 text-white"></i>
+      </button>
+      <button class="btn btn-dark">
+        <i class="bi bi-person-square text-white"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Feed Foto -->
+  <div class="container">
+    <div class="row row-cols-3 row-cols-md-4 g-1">
+      <div class="col"><img src="assets/img/1.png" class="img-fluid w-100 feed-img"></div>
+      <div class="col"><img src="assets/img/2.png" class="img-fluid w-100 feed-img"></div>
+      <div class="col"><img src="assets/img/3.png" class="img-fluid w-100 feed-img"></div>
+      <div class="col"><img src="assets/img/4.png" class="img-fluid w-100 feed-img"></div>
+      <div class="col"><img src="assets/img/5.png" class="img-fluid w-100 feed-img"></div>
+      <div class="col"><img src="assets/img/6.png" class="img-fluid w-100 feed-img"></div>
+      <div class="col"><img src="assets/img/7.png" class="img-fluid w-100 feed-img"></div>
+      <div class="col"><img src="assets/img/8.png" class="img-fluid w-100 feed-img"></div>
+      <div class="col"><img src="assets/img/9.png" class="img-fluid w-100 feed-img"></div>
+      <div class="col"><img src="assets/img/10.png" class="img-fluid w-100 feed-img"></div>
+      <div class="col"><img src="assets/img/11.png" class="img-fluid w-100 feed-img"></div>
+      <div class="col"><img src="assets/img/12.png" class="img-fluid w-100 feed-img"></div>
+    </div>
+  </div>
+
+  <footer class="text-center py-3 mt-4 text-muted">
+    <small>&copy; 2025 Profil Instagram Bootstrap</small>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

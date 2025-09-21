@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profil Instagram - Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind Icons (Heroicons / FontAwesome opsional) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body class="bg-black text-white font-sans">
+
+  <!-- Header Profil -->
+  <div class="max-w-5xl mx-auto px-4 py-6">
+    <div class="flex flex-col md:flex-row md:items-start">
+      
+      <!-- Foto Profil -->
+      <div class="flex justify-center md:justify-start w-full md:w-1/3 mb-4 md:mb-0">
+        <img src="assets/img/profile.jpg" alt="Profile" class="rounded-full border-2 border-gray-700 w-36 h-36 object-cover">
+      </div>
+
+      <!-- Info Profil -->
+      <div class="flex-1 md:ml-10">
+        <!-- Username + menu -->
+        <div class="flex items-center mb-3 space-x-3">
+          <h2 class="text-xl font-semibold">arielalfth</h2>
+          <i class="bi bi-three-dots-vertical"></i>
+        </div>
+
+        <!-- Stats -->
+        <div class="flex space-x-6 mb-3">
+          <span><strong>10</strong> posts</span>
+          <span><strong>1,396</strong> followers</span>
+          <span><strong>579</strong> following</span>
+        </div>
+
+        <!-- Tombol -->
+        <div class="flex items-center space-x-3 mb-3">
+          <button class="bg-blue-600 px-4 py-1 rounded-md font-semibold">Follow</button>
+          <button class="bg-neutral-800 px-4 py-1 rounded-md font-semibold">Message</button>
+          <button class="bg-neutral-800 p-2 rounded-full">
+            <i class="bi bi-person-plus"></i>
+          </button>
+        </div>
+
+        <!-- Bio -->
+        <p class="text-sm leading-relaxed">
+          <span class="font-semibold">Nazriel Alfath</span><br>
+          Stay 🌍 <br>
+          <a href="#" class="text-sky-400">arielalfath.vercel.app</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Highlight Stories -->
+  <div class="max-w-5xl mx-auto px-4 mb-6">
+    <div class="flex space-x-6 overflow-x-auto">
+      <div class="flex flex-col items-center">
+        <div class="p-[2px] rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600">
+          <img src="assets/img/highlight1.jpg" alt="AU" class="w-20 h-20 rounded-full border-2 border-black object-cover">
+        </div>
+        <span class="text-xs mt-1">AU</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="p-[2px] rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600">
+          <img src="assets/img/highlight2.jpg" alt="CN" class="w-20 h-20 rounded-full border-2 border-black object-cover">
+        </div>
+        <span class="text-xs mt-1">CN</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="p-[2px] rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600">
+          <img src="assets/img/highlight3.jpg" alt="US" class="w-20 h-20 rounded-full border-2 border-black object-cover">
+        </div>
+        <span class="text-xs mt-1">US</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="p-[2px] rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600">
+          <img src="assets/img/highlight4.jpg" alt="SG" class="w-20 h-20 rounded-full border-2 border-black object-cover">
+        </div>
+        <span class="text-xs mt-1">SG</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feed Navigation -->
+  <div class="max-w-5xl mx-auto px-4 mb-3">
+    <div class="flex justify-center border-t border-neutral-700 pt-2 space-x-6">
+      <button class="text-white"><i class="bi bi-grid-3x3 text-xl"></i></button>
+      <button class="text-white"><i class="bi bi-person-square text-xl"></i></button>
+    </div>
+  </div>
+
+  <!-- Feed Foto -->
+  <div class="max-w-5xl mx-auto px-2 grid grid-cols-3 md:grid-cols-4 gap-[2px]">
+    <img src="assets/img/photo1.jpg" class="w-full aspect-square object-cover">
+    <img src="assets/img/photo2.jpg" class="w-full aspect-square object-cover">
+    <img src="assets/img/photo3.jpg" class="w-full aspect-square object-cover">
+    <img src="assets/img/photo4.jpg" class="w-full aspect-square object-cover">
+    <img src="assets/img/photo5.jpg" class="w-full aspect-square object-cover">
+    <img src="assets/img/photo6.jpg" class="w-full aspect-square object-cover">
+    <img src="assets/img/photo7.jpg" class="w-full aspect-square object-cover">
+    <img src="assets/img/photo8.jpg" class="w-full aspect-square object-cover">
+    <img src="assets/img/photo9.jpg" class="w-full aspect-square object-cover">
+    <img src="assets/img/photo10.jpg" class="w-full aspect-square object-cover">
+    <img src="assets/img/photo11.jpg" class="w-full aspect-square object-cover">
+    <img src="assets/img/photo12.jpg" class="w-full aspect-square object-cover">
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-neutral-500 text-sm">
+    &copy; 2025 Profil Instagram Tailwind
+  </footer>
+
+</body>
+</html>
