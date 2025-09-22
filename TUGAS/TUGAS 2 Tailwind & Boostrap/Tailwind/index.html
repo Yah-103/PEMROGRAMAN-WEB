@@ -3,114 +3,158 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Profil Instagram - Tailwind</title>
+  <title>Profil Instagram - Tailwind CSS</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Tailwind Icons (Heroicons / FontAwesome opsional) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+    /* Foto feed square */
+    .feed-img {
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+    /* Highlight Stories */
+    .highlight-circle {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      padding: 2px;
+      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+      margin: auto;
+    }
+    .highlight-circle img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 2px solid #000; /* inner border hitam */
+      object-fit: cover;
+    }
+    .highlight-label {
+      font-size: 0.8rem;
+      margin-top: 5px;
+    }
+    /* Tombol custom */
+    .btn-primary {
+      background-color: #3b82f6;
+      border: none;
+      font-weight: 600;
+    }
+    .btn-dark {
+      background-color: #262626;
+      border: none;
+      font-weight: 600;
+    }
+  </style>
 </head>
-<body class="bg-black text-white font-sans">
+<body>
 
   <!-- Header Profil -->
-  <div class="max-w-5xl mx-auto px-4 py-6">
-    <div class="flex flex-col md:flex-row md:items-start">
-      
+  <div class="max-w-7xl mx-auto py-4 px-4 md:px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       <!-- Foto Profil -->
-      <div class="flex justify-center md:justify-start w-full md:w-1/3 mb-4 md:mb-0">
-        <img src="assets/img/profile.jpg" alt="Profile" class="rounded-full border-2 border-gray-700 w-36 h-36 object-cover">
+      <div class="text-center">
+        <img src="assets/img/profile.jpg" class="rounded-full border-2 border-black w-36 h-36 mx-auto" alt="Profile">
       </div>
 
       <!-- Info Profil -->
-      <div class="flex-1 md:ml-10">
-        <!-- Username + menu -->
-        <div class="flex items-center mb-3 space-x-3">
-          <h2 class="text-xl font-semibold">arielalfth</h2>
-          <i class="bi bi-three-dots-vertical"></i>
+      <div class="col-span-2">
+        <!-- Username menu -->
+        <div class="flex items-center mb-2">
+          <h4 class="mr-3 mb-0 text-xl">anotherworldcore ...</h4>
         </div>
-
+        <div class="flex items-center mb-2">
+          <h5 class="mr-1 mb-0 text-sm">Another World</h5>
+        </div>
         <!-- Stats -->
-        <div class="flex space-x-6 mb-3">
-          <span><strong>10</strong> posts</span>
-          <span><strong>1,396</strong> followers</span>
-          <span><strong>579</strong> following</span>
+        <div class="flex mb-2">
+          <div class="mr-4"><strong>24</strong> posts</div>
+          <div class="mr-4"><strong>390K</strong> followers</div>
+          <div><strong>19</strong> following</div>
         </div>
-
-        <!-- Tombol -->
-        <div class="flex items-center space-x-3 mb-3">
-          <button class="bg-blue-600 px-4 py-1 rounded-md font-semibold">Follow</button>
-          <button class="bg-neutral-800 px-4 py-1 rounded-md font-semibold">Message</button>
-          <button class="bg-neutral-800 p-2 rounded-full">
-            <i class="bi bi-person-plus"></i>
-          </button>
-        </div>
-
         <!-- Bio -->
-        <p class="text-sm leading-relaxed">
-          <span class="font-semibold">Nazriel Alfath</span><br>
-          Stay 🌍 <br>
-          <a href="#" class="text-sky-400">arielalfath.vercel.app</a>
+        <p class="mb-0 text-sm">
+          ✧ Dreamworld architect <br>
+          ✧ Surreal beauty from forgotten dreams <br>
+          ✧ Prints in link <br>
+          <a href="anotherworldcore.etsy.com" class="text-blue-400">anotherworldcore.etsy.com</a>
         </p>
+                <!-- Tombol interaksi -->
+        <div class="flex items-center mb-3">
+          <button class="bg-blue-500 text-white px-10 py-2 rounded-lg mr-2">Follow</button>
+        <!-- Ganti tombol + dengan gambar -->
+        <div class="bg-gray-800 text-white p-1 rounded-full">
+          <img src="assets/img/+.jpg" alt="icon" class="w-5 h-5">
+        </div>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- Highlight Stories -->
-  <div class="max-w-5xl mx-auto px-4 mb-6">
-    <div class="flex space-x-6 overflow-x-auto">
-      <div class="flex flex-col items-center">
-        <div class="p-[2px] rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600">
-          <img src="assets/img/highlight1.jpg" alt="AU" class="w-20 h-20 rounded-full border-2 border-black object-cover">
+  <div class="max-w-7xl mx-auto mb-3 text-center">
+    <div class="flex justify-center flex-wrap space-x-3 mx-3">
+      <div>
+        <div class="highlight-circle">
+          <img src="assets/img/hl4.jpg" alt="1">
         </div>
-        <span class="text-xs mt-1">AU</span>
+        <div class="highlight-label">[SUBURBIA]</div>
       </div>
-      <div class="flex flex-col items-center">
-        <div class="p-[2px] rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600">
-          <img src="assets/img/highlight2.jpg" alt="CN" class="w-20 h-20 rounded-full border-2 border-black object-cover">
+      <div>
+        <div class="highlight-circle">
+          <img src="assets/img/hl1.jpg" alt="2">
         </div>
-        <span class="text-xs mt-1">CN</span>
+        <div class="highlight-label">[DREAMCORE]</div>
       </div>
-      <div class="flex flex-col items-center">
-        <div class="p-[2px] rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600">
-          <img src="assets/img/highlight3.jpg" alt="US" class="w-20 h-20 rounded-full border-2 border-black object-cover">
+      <div>
+        <div class="highlight-circle">
+          <img src="assets/img/hl2.jpg" alt="3">
         </div>
-        <span class="text-xs mt-1">US</span>
+        <div class="highlight-label">[RETRO]</div>
       </div>
-      <div class="flex flex-col items-center">
-        <div class="p-[2px] rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600">
-          <img src="assets/img/highlight4.jpg" alt="SG" class="w-20 h-20 rounded-full border-2 border-black object-cover">
+      <div>
+        <div class="highlight-circle">
+          <img src="assets/img/hl3.jpg" alt="4">
         </div>
-        <span class="text-xs mt-1">SG</span>
+        <div class="highlight-label">[PINK REVERIE]</div>
       </div>
     </div>
   </div>
 
-  <!-- Feed Navigation -->
-  <div class="max-w-5xl mx-auto px-4 mb-3">
-    <div class="flex justify-center border-t border-neutral-700 pt-2 space-x-6">
-      <button class="text-white"><i class="bi bi-grid-3x3 text-xl"></i></button>
-      <button class="text-white"><i class="bi bi-person-square text-xl"></i></button>
-    </div>
+<!-- Navigasi Feed -->
+<div class="max-w-7xl mx-auto mb-3">
+  <div class="flex justify-center border-t-2 border-gray-600 pt-2">
+    <button class="bg-gray-800 text-white p-2 rounded-lg mr-3">
+      <img src="assets/img/a.jpg" alt="grid" class="w-5 h-5">
+    </button>
+
+    <button class="bg-gray-800 text-white p-2 rounded-lg mr-3">
+      <img src="assets/img/b.jpg" alt="person" class="w-5 h-5">
+    </button>
+
+    <button class="bg-gray-800 text-white p-2 rounded-lg">
+      <img src="assets/img/c.jpg" alt="heart" class="w-5 h-5">
+    </button>
   </div>
+</div>
 
   <!-- Feed Foto -->
-  <div class="max-w-5xl mx-auto px-2 grid grid-cols-3 md:grid-cols-4 gap-[2px]">
-    <img src="assets/img/photo1.jpg" class="w-full aspect-square object-cover">
-    <img src="assets/img/photo2.jpg" class="w-full aspect-square object-cover">
-    <img src="assets/img/photo3.jpg" class="w-full aspect-square object-cover">
-    <img src="assets/img/photo4.jpg" class="w-full aspect-square object-cover">
-    <img src="assets/img/photo5.jpg" class="w-full aspect-square object-cover">
-    <img src="assets/img/photo6.jpg" class="w-full aspect-square object-cover">
-    <img src="assets/img/photo7.jpg" class="w-full aspect-square object-cover">
-    <img src="assets/img/photo8.jpg" class="w-full aspect-square object-cover">
-    <img src="assets/img/photo9.jpg" class="w-full aspect-square object-cover">
-    <img src="assets/img/photo10.jpg" class="w-full aspect-square object-cover">
-    <img src="assets/img/photo11.jpg" class="w-full aspect-square object-cover">
-    <img src="assets/img/photo12.jpg" class="w-full aspect-square object-cover">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-3 md:grid-cols-4 gap-2">
+      <div><img src="assets/img/1.jpg" class="w-full feed-img"></div>
+      <div><img src="assets/img/2.jpg" class="w-full feed-img"></div>
+      <div><img src="assets/img/3.jpg" class="w-full feed-img"></div>
+      <div><img src="assets/img/4.jpg" class="w-full feed-img"></div>
+      <div><img src="assets/img/5.jpg" class="w-full feed-img"></div>
+      <div><img src="assets/img/6.jpg" class="w-full feed-img"></div>
+      <div><img src="assets/img/7.jpg" class="w-full feed-img"></div>
+      <div><img src="assets/img/8.jpg" class="w-full feed-img"></div>
+      <div><img src="assets/img/9.jpg" class="w-full feed-img"></div>
+      <div><img src="assets/img/10.jpg" class="w-full feed-img"></div>
+      <div><img src="assets/img/11.jpg" class="w-full feed-img"></div>
+      <div><img src="assets/img/12.jpg" class="w-full feed-img"></div>
+    </div>
   </div>
-
-  <!-- Footer -->
-  <footer class="text-center py-6 text-neutral-500 text-sm">
-    &copy; 2025 Profil Instagram Tailwind
-  </footer>
-
 </body>
 </html>
