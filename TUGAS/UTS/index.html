@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h2>Input Data</h2>
+            <form id="formMahasiswa">
+                <div class="form-group">
+                    <label for="nama">NAMA LENGKAP</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nim">NIM</label>
+                    <input type="text" id="nim" name="nim" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="semester">SEMESTER</label>
+                    <select id="semester" name="semester" required>
+                        <option value="">-- Pilih --</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                 </div>
+
+                <div class="form-group">
+                    <label for="prodi">PROGRAM STUDI</label>
+                    <select id="prodi" name="prodi" required>
+                        <option value="">-- Pilih --</option>
+                        <option value="Teknik Informatika">Teknik Informatika</option>
+                        <option value="Teknik Mesin">Teknik Mesin</option>
+                        <option value="Teknik Sipil">Teknik Sipil</option>
+                        <option value="Akuntansi">Akuntansi</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <button type="submit" class="btn-submit">KIRIM DATA</button>
+            </form>
+            <div class="info-box">
+                <ul>
+                <li>Isi data Mahasiswa dengan benar</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <h2>Informasi Pengiriman</h2>
+            
+            <div class="info-box">
+                <h3>Apa yang terjadi saat anda klik "kirim data"?</h3>
+                <ul>
+                    <li>Bisa ditampilkan di console</li>
+                    <li>Bisa disimpan di array</li>
+                    <li>Jumlah dan di update</li>
+                    <li>Form akan kosong kembali</li>
+                </ul>
+            </div>
+
+            <h3>Tabel Mahasiswa</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Nama</th>
+                        <th>Info</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr>
+                        <td colspan="3" class="no-data">Belum ada data mahasiswa</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
